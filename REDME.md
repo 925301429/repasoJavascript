@@ -59,6 +59,12 @@ La variable se declara dentro de una función.
 
 Solo se puede usar dentro de esa función.
 ## 3. operadores
+## 4. controles de flujo
+nuetros programas en javascript contienen mas de una sentencia y las sentencias son ejecutadas 
+una a una como si fuera una historia, de arriba hacia abajo como un camino recto.
+### 1. control de decicion(if-else)
+javascrip nos permite cear caminos alternativos en nuetros programas dependiendo de una decicion a esto se le conoce como caminos o 
+ejecucion condicional que ej3ecutara una sentencia
 ## 4.funciones
 ## 5. metodos para trabajar con datos estructurados
 ## 1.🔍 Acceder
