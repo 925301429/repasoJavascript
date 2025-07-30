@@ -64,7 +64,34 @@ nuetros programas en javascript contienen mas de una sentencia y las sentencias 
 una a una como si fuera una historia, de arriba hacia abajo como un camino recto.
 ### 1. control de decicion(if-else)
 javascrip nos permite cear caminos alternativos en nuetros programas dependiendo de una decicion a esto se le conoce como caminos o 
-ejecucion condicional que ej3ecutara una sentencia
+ejecucion condicional que ej3ecutara una sentencia u otra teniendo en cuenta la condicion asi ´podemos crear multiples caminos u opciones en nuestros programas
+### 2. bucles (for)-tarea consus ejemplos en codigos
+El bucle for se usa para repetir una acción un número específico de veces.
+for (inicialización; condición; incremento) {
+  // Código a ejecutar
+}
+for (let i = 1; i <= 5; i++) {
+  console.log("Número: " + i);
+}
+for (let i = 2; i <= 10; i += 2) {
+  console.log("Par: " + i);
+}
+### 3. bucles (while)-tarea con sus ejemplosen codigo
+📘 ¿Qué es un bucle while?
+Un bucle while repite una acción mientras se cumpla una condición.
+while (condición) {
+  // Código a ejecutar
+}
+let i = 1;
+while (i <= 5) {
+  console.log("Número: " + i);
+  i++;
+}
+let num = 10;
+while (num >= 1) {
+  console.log("Contando: " + num);
+  num--;
+}
 ## 4.funciones
 ## 5. metodos para trabajar con datos estructurados
 ## 1.🔍 Acceder
