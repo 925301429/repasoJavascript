@@ -94,6 +94,36 @@ while (num >= 1) {
 }
 ## 4.funciones
 ## 5. metodos para trabajar con datos estructurados
+los metodos son funciones que  se dan funcionalidad extras alos tipos de datos en los cuales se aplica,un metodo es anteesido por un tipo de dato y un punto.
+**Ejemplo**
+el ejemplo mas claro de un metodo es el `.length`- este metodo nos permite o nos retorna la antidad de aracteres de un string o la cantidad de elemento de una lista.
+```js
+"hola".length// 4
+[2,5,4,6,7].length //5
+<[!TIP] los elementos en su mayoria solo se aplian a tipo de datos string,listas y objetos,en su gran parte son apliados para listas.
+```
+### 6.1.Metodos para string -cadenas de texto
+#### length
+devuelve la longitud de una adena
+```js
+let texto="HOLA"
+console.log(texto.tolowerCase())
+//retorna -> hola
+```
+#### toUppCase
+devuelve una cadena en mayusulas
+```js
+let texto nombre="kcapa"
+let saludo="hola"
+// let conatenado=nombre+nombre
+console.log(saludo.conat(nombre))
+let cad1="oh "
+let cad2="me "
+let cad3="vengo"
+console.log(cad1.concat(cad2,cad3))
+//retorna -> oh me vengo
+```
+### 6.2. metodos para listas - Arrays
 ## 1.🔍 Acceder
 - lista[indice] → Accede a un elemento de una lista.
 
