@@ -40,112 +40,150 @@ tenemos dos pasos para crear una variable
 **Observacion**
 para crear  una variable primero tenemos que crear el enlace luego darle elnombre de la variable/constante;para 
 variavles tenemos las bpalabrasreservadas`keyword`-`let`,`var`
-**OBSERVACION**
+**RECOMENDACIONES**
 - `let`usar cuando el valor tendra que variar
 - `const`usar cuando elvalor sera elmismo siempre
 - `var`evitar usar
-`let`,`var` ambos nos permite crear  variables su unica diferencia es el alcanse ambito o`scope`
-averiguar
+`let`,`var` ambos nos permite crear  variables su unica diferencia es el alcanse ambito o`scope`averiguar
+## 3. OPERADORES.
+su clasificacion general se divide en tres.
+1. OPERADORES UNARIOS.
+   Los operadores unarios son aquellos que estan ubicados a la izquierda del valor y que retornan un nuevo valor.
+   - operacion de negacion
+2. OPERADORES BINARIOS.
+   los operadores binarios son aquellos que estan en medio de dos valores y retornan un unico valor.
+   - operaciones aritmeticos.
+   - operadores de compracion.
+   - operadores logicos.
+3. OPERADORES TERNARIOS.
+   los operadores ternarios son aquellos que evaluan tres valores y que retornan un solo valor.
+   - operador condicional.
+## 4. CONTROLES DE FLUJO.
+nuestros progrmas en javascript contienen mas de una sentencia y las sentencias son ejecutadas una a una como si
+fuera una historia, de arriba havia abajo como un camino recto.
+javascript nos permite crear caminos alternativos en nuestros programas dependiendo de una decision a esto se le 
+conoce como caminos o ejecucion condicional, que ejecutara una sentencia u otras teniendo encuenta la condicion
+asi podemos crear multiples caminos u opciones en nuestro programas.
+si tenemos una condicion verdadera se ejecutara una sentencia si tenemos una condicion false se ejecutara otra
+sentencia totalmente distinta.
+*OBSERVACION* la ejecucion condicional rompe el flujo normal de un programa.
+### 1.CONTROLES DE DECISION(IF-ELSE)
+tarea con sus ejemplos
+### 2.BLUCLES(FOR)
+### 3.BLUCLES(WHILE)
 
-## 1.🔹 Tipos de ámbito o scope:
-Ámbito global (Global scope)
+## 5.FUNCIONES.
+la funciones en javascrip son bloques de codigo que se ejecutan de manera independiente, podemos decir tambien que 
+son programas que toman datos como entra y retornan otros datos como salida.
+las funcione son fundamentales para el correcto ordenamiento denuestro codigo ademas que nos permkiten separar de una
+manera mas ordenada muestra logica y evitar repartir el codigo muchas veces.
+### TIPOS DE FUNCIONES:
+#### 1. FUNCIONES POR DECLARACION
+este tipo de funcion es la mas conocida y mas usada su estructura es la siguiente:
 
-La variable se declara fuera de cualquier función o bloque.
+### TAREA:
+### FUNCIONES POR EXPRESION:
+Una función por expresión es una función que se define como una expresión y se asigna a una variable. Se utiliza la palabra clave function seguida de los parámetros y el cuerpo de la función.
+const suma = function(a, b) {
+  return a + b;
+};
 
-Se puede acceder desde cualquier parte del código.
-## 2. Ámbito local (Local scope)
+console.log(suma(2, 3)); // Salida: 5
+### FUNCIONES DE FECHA (ARROW FUNCTION)
+Las funciones de flecha son una forma más concisa de definir funciones en JavaScript. Utilizan la sintaxis => para separar los parámetros del cuerpo de la función.
+const suma = (a, b) => {
+  return a + b;
+};
 
-La variable se declara dentro de una función.
+console.log(suma(2, 3)); // Salida: 5
+Si la función solo tiene una línea de código, puedes omitir las llaves y la palabra clave return:
+const suma = (a, b) => a + b;
 
-Solo se puede usar dentro de esa función.
-## 3. operadores
-## 4. controles de flujo
-nuetros programas en javascript contienen mas de una sentencia y las sentencias son ejecutadas 
-una a una como si fuera una historia, de arriba hacia abajo como un camino recto.
-### 1. control de decicion(if-else)
-javascrip nos permite cear caminos alternativos en nuetros programas dependiendo de una decicion a esto se le conoce como caminos o 
-ejecucion condicional que ej3ecutara una sentencia u otra teniendo en cuenta la condicion asi ´podemos crear multiples caminos u opciones en nuestros programas
-### 2. bucles (for)-tarea consus ejemplos en codigos
-El bucle for se usa para repetir una acción un número específico de veces.
-for (inicialización; condición; incremento) {
-  // Código a ejecutar
-}
-for (let i = 1; i <= 5; i++) {
-  console.log("Número: " + i);
-}
-for (let i = 2; i <= 10; i += 2) {
-  console.log("Par: " + i);
-}
-### 3. bucles (while)-tarea con sus ejemplosen codigo
-📘 ¿Qué es un bucle while?
-Un bucle while repite una acción mientras se cumpla una condición.
-while (condición) {
-  // Código a ejecutar
-}
-let i = 1;
-while (i <= 5) {
-  console.log("Número: " + i);
-  i++;
-}
-let num = 10;
-while (num >= 1) {
-  console.log("Contando: " + num);
-  num--;
-}
-## 4.funciones
-## 5. metodos para trabajar con datos estructurados
-## 1.🔍 Acceder
-- lista[indice] → Accede a un elemento de una lista.
+console.log(suma(2, 3)); // Salida: 5
+Las funciones de flecha también tienen algunas diferencias en cuanto al contexto de this, que puede ser beneficioso en ciertas situaciones.
+## 6. METODOS PAARA TRABAJAR CON DATOS ESTRUCTURADOS
+los metodos son funciones que dan funcionalidades extras a los tipos de datos en los cuales se aplican, un metodo es antesedido
+por un tipo de dato y un punto.
+*ejemplo*
+el ejemplo mas claro de un metodo es el .lengt - este metodo nos permite o nos retorna la cantidad de caracteres de un string
+o la cantidad de elementos de una lista.
+js
+"hola".length //4
+[2,5,4,6,7].length //5
 
-- diccionario['clave'] → Accede a un valor por su clave.
+>[!TIP] los metodos en su mayoria solo se aplican a tipo de datos string, listas y objetos, en su gran parte son aplicadospara listas.
+### 6.1 METODOS PARA STRING - CADENAS DE TEXTO
+#### LENGTH
+devuelve la longitud de una cadena
+js
+let mensaje="hola como estas"
+console.log(mensaje.lenght)
+//retorna -> 15
 
-- df['columna'] (en pandas) → Accede a una columna del DataFrame.
+#### TOLOWERCASE
+devuelve una cadena en minuscula
+js
+let texto="hola"
+console.log(texto.tolowercase())
+// retorna -> hola
 
-- df.loc[fila, columna] o df.iloc[indice_fila, indice_col] → Accede a celdas específicas.
+#### TOUPPERCASE
+devuelve una  cadena en mayusculas
+js
+let texto="hola"
+console.log(texto.toUpperCase())
+// retorna -> HOLA
 
-## 2.✏️ Modificar
-- lista[indice] = nuevo_valor
+#### CONCAT 
+combina el texto de dos o mas cadenas
+```js
+let nombre="kcapa"
+let saludo="hola"
+//let concatenado=nombre+saludo
+console.log(saludo.concat(nombre))
 
-- diccionario['clave'] = nuevo_valor
+let cad1="oh "
+let cad2="me "
+let cad3="vengo"
+console.log(cad1.concat(cad2,cad3))
+//retorna -> oh me vengo
+```
+### TRIM
+este metodo elimina los espacios que existen al inicio o final de una cadena o texto.
+```js
+let texto="   hola"
+let nuevotexto=texto.trim() //hola
+let otrotexto="hola   "
+let nuevoOtrotexto=otrotexto.trim()//hola
+```
 
-- df.at[indice, 'columna'] = nuevo_valor → Cambia un valor específico.
-
-- df['columna'] = df['columna'] * 2 → Modifica toda una columna.
-## 3. 🆕 Crear
-- lista = [] → Crea una lista vacía.
-
-- diccionario = {} → Crea un diccionario.
-
-- df = pd.DataFrame(datos) → Crea un DataFrame.
-
-- df['nueva_columna'] = valores → Crea una nueva columna.
-
-## 4. ➕ Insertar
-- lista.append(valor) → Añade al final.
-
-- lista.insert(indice, valor) → Inserta en posición específica.
-
-- diccionario['nueva_clave'] = valor → Inserta nuevo par clave-valor.
-
-- df.loc[nuevo_indice] = valores → Inserta una nueva fila.
-
-## 5. ❌ Eliminar
-- lista.remove(valor)
-
-- lista.pop(indice)
-
-- del diccionario['clave']
-
-- df.drop('columna', axis=1) → Elimina columna.
-
-- df.drop(indice, axis=0) → Elimina fila.
-
-## 6. 🔃 Ordenar
-- lista.sort() o sorted(lista)
-
-- df.sort_values(by='columna')
-
-- df.sort_index() → Ordena por índice.
-
+#### slice - corte
+este metodo  nos permite extaraer partes de una cadena, espesificando sus indices, donde comensar y asta donde mostarar 
+```js
+let parrafo= "hola soy ronny"
+//solo quiero que mew muuestre ronny 
+let nombre=parrafo.slice(9)//ronny
+let soy=parrafo(5,8) // soy
+```
+### split -divide
+este metodo retorna una lista basandose en un separador que se le indique
+```js
+let parrafo="solo se que nada se"
+parrafo.split("")//["solo","se","que","nada","se"]
+let url="google.com/search?=gatitos"
+let gatito=url.split("=")//["google.com/search?","gatitos"]
+console.log(gatito[1])//gatitos
+let lista de frutras="manzana,tomate,pera,naranja"
+lista de frutas,split(",")
+```
 
 
+### 6.2 METODOS PARA LISTA - ARRAYS
+### ACCEDER
+### MODIFICAR
+### CREAR 
+### INSERTAR
+### ELIMINAR
+### ORDENAR 
+### 6.2 METODOS PARA OBJETOS.
+## 7. DOM
