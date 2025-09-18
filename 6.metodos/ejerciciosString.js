@@ -27,4 +27,13 @@ function nombresEnMayuscula(listaAmigos) {
   let amigosMayus = nombresEnMayuscula(amigos);
   
   console.log(amigosMayus); // ["ANA", "CARLOS", "MARÍA"]
-  
+
+  function resta(a,b){
+    return a-b
+  }
+  let res=rest(10,5)
+  function producto(valor){
+    return numero=>numero*valor
+  }
+  let multi=producto(2)
+  console.log(multi(5)) 10
